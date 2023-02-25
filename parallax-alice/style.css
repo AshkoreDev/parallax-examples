@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax__container {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 8px;
+}
+
+.image {
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.image__background {
+  transform: translateZ(0px) scale(1);
+}
+
+.image__middle {
+  transform: translateZ(2px) scale(0.75);
+}
+
+.image__foreground {
+  transform: translateZ(5px) scale(0.375);
+}
